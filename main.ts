@@ -2,7 +2,7 @@
  *
  * Created by: Caleb Andreas
  * Created on: Oct 2024
- * This program makes the lights on the robotbit a traffic light.
+ * This program ...
 */
 
 // variables
@@ -19,34 +19,12 @@ neopixelStrip.show()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-    // Green
-    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
-    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+    basic.showIcon(IconNames.Square)
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
+    basic.pause(1000)
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
     neopixelStrip.show()
-    basic.pause(5000)
-
-    // Yellow
-    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.show()
-    basic.pause(2000)
-
-    // Red
-    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.show()
-    basic.pause(5000)
-
-    // All RGB LEDs off
-    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.show()
+    basic.showIcon(IconNames.Happy)
 })

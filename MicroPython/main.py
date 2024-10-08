@@ -1,11 +1,14 @@
 """
 Created by: Caleb Andreas
 Created on: Sep 2020
-This module is a Micro:bit MicroPython program
+This program makes the lights on the robotbit a traffic light.
 """
 
 from microbit import *
+import neopixel
 
+# variable
+neopixelStrip: neopixel.Strip = null
 
 neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
