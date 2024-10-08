@@ -1,7 +1,7 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
  * Created by: Caleb Andreas
- * Created on: Oct 2024
+ * Created on: Oct 2024 
  * This program makes the lights on the robotbit a traffic light.
 */
 
