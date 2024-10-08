@@ -5,7 +5,7 @@ This program makes the lights on the robotbit a traffic light.
 """
 
 from microbit import *
-import neopixel
+import neopixel 
 
 # variable
 neopixelStrip: neopixel.Strip = null
